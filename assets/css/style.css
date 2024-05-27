@@ -1,2 +1,13 @@
 @import url(font.css);
 @import url(colors.css);
+
+body {
+    margin: 0;
+}
+
+.menu{
+    display: flex;
+    flex-direction: column;
+    height: 127px;
+    background: var(--nav-bg-color);
+}
