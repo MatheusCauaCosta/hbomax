@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;700&display=swap");
+
+@media screen and (width >= 481px) {
+    .menu {
+        flex-direction: row;
+        justify-content: space-between;
+        height: 60px;
+        gap: 0px;
+        padding: 12px;
+    }
+
+    .menu img {
+        width: 160px;
+    }
+
+    .menu__btn {
+        margin-left: 14px;
+    }
+
+    .header {
+        padding: 138px 0px 0px 0px;
+    }
+
+    .header__title {
+        width: 400px;
+    }
+}
