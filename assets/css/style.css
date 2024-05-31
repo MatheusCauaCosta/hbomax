@@ -1,5 +1,6 @@
 @import url(font.css);
 @import url(colors.css);
+@import url(animation.css);
 
 * {
     padding: 0;
@@ -7,9 +8,10 @@
     box-sizing: border-box;
 }
 
+
 body {
     background-color: burlywood;
-    scroll-behavior: smooth;
+    overflow: auto;
 }
 
 .menu{
@@ -111,12 +113,39 @@ body {
 
 /*preço assinatura*/
 
-.price {
+.oferta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.oferta span {
     font-size: 1.8rem;
+}
+
+.price {
+    font-size: 2.5rem;
 }
 
 small {
     font-size: 0.9rem;
 }
 
-/*botão*/
+.comentario {
+    text-align: center;
+}
+
+/*botão oferta*/
+
+.oferta a {
+    margin-top: 24px;
+    margin-bottom: 32px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    padding: 16px 40px;
+    background: var(--divider-bg-color);
+    border-radius: 400px;
+    animation: botao-assine 2.2s linear infinite;
+}
+
