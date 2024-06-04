@@ -56,13 +56,18 @@ body {
 /*Header*/
 
 .header {
-   padding: 228px 40px 0px 40px;
+   display: flex;
+   flex-direction: column;
+}
+
+.header__content {
    display: flex;
    flex-direction: column;
    align-items: center;
    gap: 40px;
    color: white;
    font-size: 1.3rem;
+   padding: 228px 40px 0px 40px;
 }
 
 .header__channels {
@@ -147,5 +152,11 @@ small {
     background: var(--divider-bg-color);
     border-radius: 400px;
     animation: botao-assine 2.2s linear infinite;
+}
+
+header::after {
+    content: "";
+    width: 100%;
+    height: 250px;
 }
 
