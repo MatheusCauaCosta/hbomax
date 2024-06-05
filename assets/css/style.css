@@ -6,6 +6,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    color: white;
 }
 
 
@@ -42,7 +43,6 @@ body {
 .menu__btn a {
    font-size: 0.75rem;
    text-decoration: none;
-   color: white;
    letter-spacing: 2px;
    font-weight: 700;
 }
@@ -60,14 +60,25 @@ body {
    flex-direction: column;
 }
 
+header::after {
+    content: "";
+    width: 100%;
+    height: 250px;
+}
+
+header::before {
+    content: "";
+    width: 100%;
+    height: 228px;
+}
+
 .header__content {
    display: flex;
    flex-direction: column;
    align-items: center;
    gap: 40px;
-   color: white;
    font-size: 1.3rem;
-   padding: 228px 40px 0px 40px;
+   padding: 0px 40px 0px 40px;
 }
 
 .header__channels {
@@ -147,16 +158,69 @@ small {
     margin-bottom: 32px;
     text-decoration: none;
     text-transform: uppercase;
-    color: white;
     padding: 16px 40px;
     background: var(--divider-bg-color);
     border-radius: 400px;
     animation: botao-assine 2.2s linear infinite;
 }
 
-header::after {
-    content: "";
-    width: 100%;
-    height: 250px;
+/*Main*/
+
+.section__plans {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 24px;
 }
+
+.title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 32px;
+}
+
+.card__plans {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    width: 80%;
+    text-align: center;
+    background: var(--card-bg-color);
+    margin-bottom: 16px;
+}
+
+.subscription__price {
+    margin-bottom: 16px;
+}
+
+.description {
+    text-align: left;
+    margin-bottom: 16px;
+    padding-left: 12px;
+}
+
+.description::marker{
+    content: "+";
+}
+
+.button__plans--mobile {
+    background: var(--divider-bg-color);
+    border: none;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 16px 40px;
+    border-radius: 400px;
+    margin-top: 128px;
+}
+
+.button__plans--multitelas {
+    background: var(--divider-bg-color);
+    border: none;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 16px 40px;
+    border-radius: 400px;
+    margin-top: 8px;
+}
+
 
