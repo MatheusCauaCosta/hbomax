@@ -7,6 +7,7 @@
     margin: 0;
     box-sizing: border-box;
     color: white;
+    font-family: raleway;
 }
 
 
@@ -24,7 +25,6 @@ body {
     gap: 20px;
     padding: 32px 24px;
     background: var(--nav-bg-color);
-    font-family: raleway, sans-serif;
     position: fixed;
 }
 
@@ -105,7 +105,6 @@ header::before {
     text-transform: uppercase;
     text-align: center;
     line-height: normal;
-    font-family: raleway, sans-serif;
 }
 
 .header__title {
@@ -183,10 +182,11 @@ small {
     display: flex;
     flex-direction: column;
     padding: 40px;
-    width: 80%;
+    width: 90%;
     text-align: center;
     background: var(--card-bg-color);
     margin-bottom: 16px;
+    border-radius: 24px;
 }
 
 .subscription__price {
@@ -224,3 +224,26 @@ small {
 }
 
 
+.section__channels {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 24px;
+    margin: 128px 0px 32px 0px;
+}
+
+.section__title {
+    width: 250px;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 24px;
+}
+
+.content__channels {
+    display: grid;
+    width: 95%;
+}
+
+.card__image img {
+    width: 100%;
+}
