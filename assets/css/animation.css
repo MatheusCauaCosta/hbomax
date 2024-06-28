@@ -19,6 +19,33 @@
     }
 }
 
+@keyframes botao-plano {
+    0% {
+        transform: scale(1);
+        background: var(--btn-bg-color-gradient);
+        background-size: 250%;
+        border: 2px solid transparent;
+    }
+    25% {
+        transform: scale(1.1);
+        background: var(--btn-bg-color-gradient);
+        background-size: 250%;
+        border: 2px solid transparent; 
+    }
+    50%,75%,100% {
+        transform: scale(1.2);
+        background: transparent; 
+        border: 2px solid var(--secondary-color);
+    }
+}
+
+.elemento {
+    animation: botao-plano 3s ease forwards;
+}
+
+
+
+
 
 @keyframes background-animation {
     0% {
