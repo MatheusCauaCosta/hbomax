@@ -39,12 +39,9 @@
     }
 }
 
-.elemento {
+/*.elemento {
     animation: botao-plano 3s ease forwards;
-}
-
-
-
+}*/
 
 
 @keyframes background-animation {
@@ -56,5 +53,26 @@
     }
     100% {
         background-position: 0% 50%;
+    }
+}
+
+
+@keyframes mover-plano-telas {
+    0% {
+        transform: rotateY(0deg);
+    }
+
+    50%,100% {
+        transform: rotateY(-15deg);
+    }
+}
+
+@keyframes mover-plano-mobile {
+    0% {
+        transform: rotateY(0deg);
+    }
+
+    50%,100% {
+        transform: rotateY(15deg);
     }
 }

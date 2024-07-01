@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;700&display=swap");
+@import url(animation.css);
 
 @media screen and (width >= 481px) {
     .menu {
@@ -19,10 +20,112 @@
     }
 
     .header {
-        padding: 138px 0px 0px 0px;
+        padding: 65px 0px 0px 0px;
+        /*138*/
     }
 
     .header__title {
         width: 400px;
+    }
+
+    .subscription__price {
+        color: var(--secondary-color);
+        text-align: end;
+        font-size: 2.2rem;
+        font-weight: 900;
+        margin-right: 12px;
+    }
+
+    /* main */
+
+    .main__content {
+        background-image: url(../IMG/background-movies-series.png);
+        background-size: 116%;
+        background-repeat: no-repeat;
+    }
+
+    .container__plans {
+        display: flex;
+        flex-direction: row;
+        gap: 64px;
+        perspective: 600px;
+    }
+
+
+    .container__plans:has(.card__plans:nth-child(1):hover) .card__plans:nth-child(2) {
+        animation: mover-plano-telas 3s ease-in-out forwards;
+    }
+
+    .container__plans:has(.card__plans:nth-child(2):hover) .card__plans:nth-child(1) {
+        animation: mover-plano-mobile 3s ease-in-out forwards;
+    }
+
+    @keyframes botao-plano {
+        0% {
+            transform: scale(1);
+            background: var(--btn-bg-color-gradient);
+            background-size: 250%;
+            border: 2px solid transparent;
+        }
+        25%,50%,75%,100% {
+            transform: scale(1.1);
+            background: transparent; 
+            border: 2px solid var(--secondary-color);
+        }
+    }
+
+    .button__plans--multitelas:hover{
+        animation:botao-plano 2.5s linear forwards;
+    }
+
+    .button__plans--mobile:hover {
+        animation:botao-plano 2.5s linear forwards;
+    }
+
+    /* gallery */
+
+    .section__gallery{
+        margin-bottom: 0px;
+    }
+
+    .card__gallery {
+        display: grid;
+        overflow-x: visible;
+        padding: 0px 150px 150px 150px;
+        grid-template-columns: repeat(3, 30%);
+        grid-template-rows: repeat(2, 520px);
+        gap: 35px;
+        margin-bottom: 0px;
+    }
+
+    /* footer */
+
+    .body__login {
+        background-image: url(../IMG/background-movies-series.png);
+        background-size: 116%;
+        background-repeat: no-repeat;
+    }
+
+
+    .login {
+        padding: 64px;
+        
+    }
+
+    .form_login {
+        width: 55%;
+        margin-bottom: 64px;
+    }
+
+    .footer__login {
+        padding: 16px;
+    }
+
+    .nav__footer--link{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 42px;
+        word-spacing: .5rem;
     }
 }
