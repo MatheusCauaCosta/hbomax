@@ -25,7 +25,18 @@
     }
 
     .header__title {
-        width: 400px;
+        max-width: 705px;
+        text-align: start;
+        text-transform: uppercase;
+    }
+
+    .header__title-white {
+        height: 37px;
+        text-align: start;
+    }
+
+    .header__channels {
+        max-height: 90px;
     }
 
     .subscription__price {
